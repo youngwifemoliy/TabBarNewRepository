@@ -1,0 +1,61 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (4.0.7)
+  - MJRefresh (3.1.12)
+  - pop (1.0.9)
+  - RDVTabBarController (1.1.9)
+  - SVProgressHUD (2.1.2)
+  - TYPagerController (1.0.2)
+  - XHToast (1.3.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
+  - MJRefresh
+  - pop
+  - RDVTabBarController
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+  - TYPagerController
+  - XHToast
+  - YYKit
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 803bc1e473e2861f75abf06174d9c937de7a0fe0
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  SVProgressHUD: d65371a8e4482380deddb9fe60e14e59ddb30eb3
+  TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
+  XHToast: 0918bc1a000b45132d0e94cd627507a5aae1d17d
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 28ba057de938998e00a4524326c1b29517fe7f17
+
+COCOAPODS: 1.1.1
