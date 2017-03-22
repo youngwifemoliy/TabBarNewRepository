@@ -8,7 +8,6 @@
 
 #import "MLDTabBarViewController.h"
 #import "RDVTabBarItem.h"
-#import "UIView+Shadow.h"
 
 @interface MLDTabBarViewController ()<RDVTabBarControllerDelegate>
 
@@ -26,24 +25,26 @@
 
 - (void)setupViewControllers
 {
-    [HTTPHelper HTTPSManager];
-    
-    UIStoryboard *storyboard1 = [UIStoryboard storyboardWithName:@"First" bundle:nil];
+    UIStoryboard *storyboard1 = [UIStoryboard storyboardWithName:@"First"
+                                                          bundle:nil];
     UINavigationController *firstVC = [storyboard1 instantiateViewControllerWithIdentifier:@"FirstVC"];
-    UIStoryboard *storyboard2 = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
+    UIStoryboard *storyboard2 = [UIStoryboard storyboardWithName:@"Second"
+                                                          bundle:nil];
     UINavigationController *secondVC = [storyboard2 instantiateViewControllerWithIdentifier:@"SecondVC"];
-    UIStoryboard *storyboard3 = [UIStoryboard storyboardWithName:@"Third" bundle:nil];
+    UIStoryboard *storyboard3 = [UIStoryboard storyboardWithName:@"Third"
+                                                          bundle:nil];
     UINavigationController *thirdVC = [storyboard3 instantiateViewControllerWithIdentifier:@"ThirdVC"];
-    [self setViewControllers:@[firstVC,secondVC,thirdVC]];
+    [self setViewControllers:@[
+                               firstVC,
+                               secondVC,
+                               thirdVC
+                               ]];
 }
 
 - (void)setupTabBar
 {
 //    tabbar 背景图片 tabbar_background
     UIImage *backgroundImage ;//= [UIImage imageNamed:@"tabbar_background"];
-    [self.rdv_tabBarController.tabBar makeInsetShadowWithRadius:3.0
-                                                    Color:[UIColor blackColor]
-                                               Directions:[NSArray arrayWithObjects:@"top", nil]];
 //    选项卡图片
     NSArray *tabBarItemImages = @[@"mail",@"shop",@"girl"];
     NSArray *tabBarItemTitles = @[@"信息",@"商城",@"我的"];
@@ -65,7 +66,6 @@
                                            NSFontAttributeName: [UIFont boldSystemFontOfSize:8],
                                            NSForegroundColorAttributeName:[UIColor grayColor]
                                            };
-
     }];
 }
 

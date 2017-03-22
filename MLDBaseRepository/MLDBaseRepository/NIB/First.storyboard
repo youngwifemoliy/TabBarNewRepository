@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="OZ2-0y-mSV">
             <objects>
-                <viewController id="X1v-xx-p2M" sceneMemberID="viewController">
+                <viewController id="X1v-xx-p2M" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8KO-hP-RRg"/>
                         <viewControllerLayoutGuide type="bottom" id="bRn-iS-ZN9"/>
@@ -21,24 +21,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7P-Yt-PIc">
-                                <rect key="frame" x="164" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="162" y="314" width="50" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Nde-V9-gA7"/>
+                                    <constraint firstAttribute="width" constant="50" id="cLO-Rd-5r4"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <segue destination="GZW-tX-oTd" kind="push" id="Fyg-IZ-Rlq"/>
+                                    <segue destination="GZW-tX-oTd" kind="show" id="KiR-5v-I9p"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="g7P-Yt-PIc" firstAttribute="centerY" secondItem="c3c-mO-pZx" secondAttribute="centerY" id="N9w-mc-Tmf"/>
                             <constraint firstItem="g7P-Yt-PIc" firstAttribute="centerX" secondItem="c3c-mO-pZx" secondAttribute="centerX" id="QVN-QK-WBO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uGX-s1-B0p"/>
+                    <connections>
+                        <outlet property="button" destination="g7P-Yt-PIc" id="dox-Ux-j5M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8y-gK-zEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="401" y="90"/>
+            <point key="canvasLocation" x="470" y="90"/>
         </scene>
         <!--Base View Controller-->
         <scene sceneID="Bo6-WT-gS2">
@@ -57,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcq-au-tFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="84"/>
+            <point key="canvasLocation" x="1278" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h4t-ha-kso">

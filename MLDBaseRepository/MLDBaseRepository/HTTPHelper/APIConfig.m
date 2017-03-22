@@ -1,14 +1,14 @@
 //
-//  HTTPHelper.m
+//  APIConfig.m
 //  MLDBaseRepository
 //
 //  Created by Moliy on 2017/3/22.
 //  Copyright © 2017年 Moliy. All rights reserved.
 //
 
-#import "HTTPHelper.h"
+#import "APIConfig.h"
 
-@implementation HTTPHelper
+@implementation APIConfig
 + (AFHTTPSessionManager *)HTTPSManager
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -21,7 +21,12 @@
     securityPolicy.allowInvalidCertificates = YES;
     securityPolicy.validatesDomainName = NO;
     manager.securityPolicy = securityPolicy;
-    
+    return manager;
+}
+
++ (AFHTTPSessionManager *)HTTPManager
+{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     return manager;
 }
 @end
