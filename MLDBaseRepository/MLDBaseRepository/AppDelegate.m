@@ -15,14 +15,12 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    MLDTabBarViewController *rootVC = [[MLDTabBarViewController alloc] init];
-    self.window.rootViewController = rootVC;
-
+    MLDTabBarViewController *tabBarVC = [[MLDTabBarViewController alloc] init];
+    self.window.rootViewController = tabBarVC;
     return YES;
 }
 

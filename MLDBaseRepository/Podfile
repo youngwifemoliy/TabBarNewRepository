@@ -15,4 +15,6 @@ pod 'MJRefresh'
 pod 'XHToast'
 pod 'RDVTabBarController'
 pod 'TYPagerController'
+pod 'SDCycleScrollView', '~> 1.65'
+pod 'Wonderful'
 end
