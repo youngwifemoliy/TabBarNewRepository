@@ -10,23 +10,24 @@
 
 @interface MLDPhotoManager ()<LGPhotoPickerBrowserViewControllerDataSource,LGPhotoPickerBrowserViewControllerDelegate>
 
-@property (nonatomic, assign) LGShowImageType showType;
-@property (nonatomic, strong)NSMutableArray *LGPhotoPickerBrowserPhotoArray;
-@property (nonatomic, strong)NSMutableArray *LGPhotoPickerBrowserURLArray;
-@property (nonatomic,copy)void(^CameraImage)(UIImage *cameraImage);
-@property (nonatomic,copy)void(^AlbumArray)(NSArray *albumArray);
+@property (nonatomic,assign) LGShowImageType showType;
+@property (nonatomic,strong) NSMutableArray *LGPhotoPickerBrowserPhotoArray;
+@property (nonatomic,strong) NSMutableArray *LGPhotoPickerBrowserURLArray;
+@property (nonatomic,copy) void(^CameraImage)(UIImage *cameraImage);
+@property (nonatomic,copy) void(^AlbumArray)(NSArray *albumArray);
+
 @end
 
 @implementation MLDPhotoManager
 
-+ (void)showPhotoManager:(UIView *)sender
++ (void)showPhotoManager:(UIView *)carryView
          withCameraImage:(void(^)(UIImage *cameraImage))cameraImage
           withAlbumArray:(void(^)(NSArray *albumArray))albumArray
 {
     MLDPhotoManager *objct = [[MLDPhotoManager alloc] init];
     objct.AlbumArray = albumArray;
     objct.CameraImage = cameraImage;
-    [objct showAlert:sender];
+    [objct showAlert:carryView];
 }
 
 
@@ -161,16 +162,7 @@
             }
         }
     }
-    UIView *frontView = [[window subviews] objectAtIndex:0];
-    id nextResponder = [frontView nextResponder];
-//    if ([nextResponder isKindOfClass:[UIViewController class]])
-//    {
-//        result = nextResponder;
-//    }
-//    else
-//    {
-        result = window.rootViewController;
-//    }
+    result = window.rootViewController;
     return result;
 }
 
