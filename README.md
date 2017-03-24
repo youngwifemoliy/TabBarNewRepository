@@ -12,7 +12,7 @@
     |   |   └──BaseViewController(除了TabBarController上面的三个控制器其余的控制器都可继承于此类已经写好了隐藏TabBar的代码)
     │   ├── HTTPHelper: 放置网络请求的文件夹
     |   |   └──APIConfig:网络控制器已经写好了证书代码刻意直接用宏来改变请求方式
-    └── Pods：项目使用了[CocoaPods](http://code4app.com/article/cocoapods-install-usage)这个类库管理工具
+    └── Pods：项目使用了CocoaPods管理工具
 
 # 开源鸣谢
 名称|说明|地址
