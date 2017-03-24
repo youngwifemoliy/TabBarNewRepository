@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="OZ2-0y-mSV">
             <objects>
-                <viewController id="X1v-xx-p2M" sceneMemberID="viewController">
+                <viewController id="X1v-xx-p2M" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8KO-hP-RRg"/>
                         <viewControllerLayoutGuide type="bottom" id="bRn-iS-ZN9"/>
@@ -27,18 +27,27 @@
                                     <constraint firstAttribute="height" constant="40" id="Nde-V9-gA7"/>
                                     <constraint firstAttribute="width" constant="50" id="cLO-Rd-5r4"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Push">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="GZW-tX-oTd" kind="show" id="KiR-5v-I9p"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GR-Dz-lct">
+                                <rect key="frame" x="163.5" y="272" width="48" height="34"/>
+                                <state key="normal" title="Photo"/>
+                                <connections>
+                                    <action selector="photoClick:" destination="X1v-xx-p2M" eventType="touchUpInside" id="GOd-uN-HK9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="g7P-Yt-PIc" firstAttribute="top" secondItem="9GR-Dz-lct" secondAttribute="bottom" constant="8" id="IPw-qR-HSz"/>
                             <constraint firstItem="g7P-Yt-PIc" firstAttribute="centerY" secondItem="c3c-mO-pZx" secondAttribute="centerY" id="N9w-mc-Tmf"/>
                             <constraint firstItem="g7P-Yt-PIc" firstAttribute="centerX" secondItem="c3c-mO-pZx" secondAttribute="centerX" id="QVN-QK-WBO"/>
+                            <constraint firstItem="9GR-Dz-lct" firstAttribute="centerX" secondItem="c3c-mO-pZx" secondAttribute="centerX" id="glS-q3-EOn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uGX-s1-B0p"/>

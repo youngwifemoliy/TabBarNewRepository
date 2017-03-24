@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "MLDPhotoManager.h"
 
 @interface FirstViewController ()
 
@@ -18,6 +19,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+- (IBAction)photoClick:(UIButton *)sender
+{
+    [MLDPhotoManager showPhotoManager:sender
+                      withCameraImage:^(UIImage *cameraImage)
+     {
+         NSLog(@"cameraImage==%@",cameraImage);
+     }
+                       withAlbumArray:^(NSArray *albumArray)
+    {
+        NSLog(@"albumArray===%@",albumArray);
+    }];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
