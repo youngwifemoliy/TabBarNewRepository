@@ -51,7 +51,6 @@
     // Ignore duplicate direction
     NSMutableDictionary *directionDict = [[NSMutableDictionary alloc] init];
     for (NSString *direction in directions) [directionDict setObject:@"1" forKey:direction];
-    
     for (NSString *direction in directionDict) {
         // Ignore invalid direction
         if ([kValidDirections containsObject:direction])
@@ -84,7 +83,6 @@
             [shadowView.layer insertSublayer:shadow atIndex:0];
         }
     }
-    
     return shadowView;
 }
 

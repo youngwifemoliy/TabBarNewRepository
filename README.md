@@ -5,7 +5,7 @@
 
     ├── TabBarNewRepository
     │   ├── 3：三方库
-    |   |   ├── MLDPhotoManager: 相册管理器
+    |   |   ├──MLDPhotoManager: 相册管理器
     |   |   ├──MLDBaseButton: 基于POP的按钮动画,创建按钮后直接更改按钮继承即可
     |   |   └──MLDTableViewCell: 基于POP的tableViewCell动画,同样直接改继承关系即可
     │   ├── Classes：放置主要类的文件夹
