@@ -5,16 +5,16 @@
 
     ├── TabBarNewRepository
     │   ├── 3：三方库
-    |   |   ├──MLDPhotoManager: 相册管理器
-    |   |   ├──MLDBaseButton: 基于POP的按钮动画,创建按钮后直接更改按钮继承即可
-    |   |   └──MLDTableViewCell: 基于POP的tableViewCell动画,同样直接改继承关系即可
+    |   |   ├── MLDPhotoManager: 相册管理器
+    |   |   ├── MLDBaseButton: 基于POP的按钮动画,创建按钮后直接更改按钮继承即可
+    |   |   └── MLDTableViewCell: 基于POP的tableViewCell动画,同样直接改继承关系即可
     │   ├── Classes：放置主要类的文件夹
-    |   |   └──MLDTabBarViewController(TabBar控制器)
+    |   |   └── MLDTabBarViewController(TabBar控制器)
     │   ├── NIB: 放置StoryBoard的文件夹
     │   ├── BaseClesses: 放置基类的文件夹
-    |   |   └──BaseViewController(除了TabBarController上面的三个控制器其余的控制器都可继承于此类已经写好了隐藏TabBar的代码)
+    |   |   └── BaseViewController(除了TabBarController上面的三个控制器其余的控制器都可继承于此类已经写好了隐藏TabBar的代码)
     │   ├── HTTPHelper: 放置网络请求的文件夹
-    |   |   └──APIConfig:网络控制器已经写好了证书代码刻意直接用宏来改变请求方式
+    |   |   └── APIConfig:网络控制器已经写好了证书代码刻意直接用宏来改变请求方式
     └── Pods：项目使用了CocoaPods管理工具
 
 # 开源鸣谢

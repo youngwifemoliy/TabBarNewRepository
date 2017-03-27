@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MLDTabBarViewController.h"
+#import <IQKeyboardManager.h>
+
 
 @interface AppDelegate ()
 
@@ -15,8 +17,11 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.shouldResignOnTouchOutside = YES;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     MLDTabBarViewController *tabBarVC = [[MLDTabBarViewController alloc] init];
