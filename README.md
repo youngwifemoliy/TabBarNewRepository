@@ -1,9 +1,9 @@
-# TabBarNewRepository
+# MLDTabBarNewRepository
 新建一个项目,应该包含了基础库,以及TabBar.
 
 # 项目目录
 
-    ├── TabBarNewRepository
+    ├── MLDTabBarNewRepository
     │   ├── 3：三方库
     |   |   ├── MLDPhotoManager: 相册管理器
     |   |   ├── MLDBaseButton: 基于POP的按钮动画,创建按钮后直接更改按钮继承即可
