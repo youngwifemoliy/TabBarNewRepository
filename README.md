@@ -36,7 +36,7 @@ MLDPhotoManager|基于LGPhotoBrowser二次封装的可以相册管理器|https:/
 MLDBaseButton|基于POP的按钮动画,创建按钮后直接更改按钮继承即可|https://github.com/youngwifemoliy/MLDClass
 MLDTableViewCell|基于POP的tableViewCell动画,同样直接改继承关系即可|https://github.com/youngwifemoliy/MLDClass
 
-PS:[iOS项目的完整重命名方法图文教程](http://www.cocoachina.com/ios/20150104/10824.html)
+PS:[iOS项目的完整重命名方法图文教程](http://www.cnblogs.com/GarveyCalvin/p/4195745.html)
 
 # 在这里找到我
 E-Mail: youngwifemoliy@live.cn
