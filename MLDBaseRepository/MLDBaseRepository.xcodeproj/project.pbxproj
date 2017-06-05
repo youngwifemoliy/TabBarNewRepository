@@ -579,7 +579,7 @@
 				TargetAttributes = {
 					643ADFD81E811A7900A85B19 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ER6VA234TS;
+						DevelopmentTeam = TZZ2ER5BCT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -850,12 +850,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_HEADERS_RUN_UNIFDEF = NO;
-				DEVELOPMENT_TEAM = ER6VA234TS;
+				DEVELOPMENT_TEAM = TZZ2ER5BCT;
 				GCC_PREFIX_HEADER = /Users/Moliy/Desktop/Git/TabBarNewRepository/MLDBaseRepository/MLDBaseRepository/MLDPrefixHeader.pch;
 				INFOPLIST_FILE = MLDBaseRepository/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Butterfly.MoliySDev.MLDBaseRepository;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uhisports.football;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -866,12 +866,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_HEADERS_RUN_UNIFDEF = NO;
-				DEVELOPMENT_TEAM = ER6VA234TS;
+				DEVELOPMENT_TEAM = TZZ2ER5BCT;
 				GCC_PREFIX_HEADER = /Users/Moliy/Desktop/Git/TabBarNewRepository/MLDBaseRepository/MLDBaseRepository/MLDPrefixHeader.pch;
 				INFOPLIST_FILE = MLDBaseRepository/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Butterfly.MoliySDev.MLDBaseRepository;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uhisports.football;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
